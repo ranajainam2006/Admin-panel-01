@@ -1,0 +1,27 @@
+{
+  "Category": [
+    {
+      "id": "8834",
+      "CreateDate": "3/10/2025",
+      "Product_category": "Category 1"
+    }
+  ],
+  "SubCategory": [
+    {
+      "id": "312c",
+      "currentDate": "3/11/2025",
+      "subCategorySelect": "Category 1",
+      "subCategory_name": "SubCategory 1"
+    }
+  ],
+  "Product": [
+    {
+      "id": "9a40",
+      "CreateDate": "3/10/2025",
+      "ProductCategory": "Category 1",
+      "ProductSubCategory": "SubCategory 1",
+      "ProductName": "Product 1",
+      "ProductPrice": "9999"
+    }
+  ]
+}

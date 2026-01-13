@@ -1,0 +1,426 @@
+:root {
+  --fabrixa-green: #76b43f;
+}
+
+.dashboard:hover,
+.dashboard:focus,
+.dashboard:active {
+  color: #fff;
+  background-color: rgba(70, 84, 100, 0.95) !important;
+}
+ 
+.sidebarmenu {
+  width: 280px;
+  height: 100vh;
+  background-color: rgba(10, 25, 47, 0.95);
+  border-right: 1px solid rgba(92, 99, 109, 0.95);
+}
+
+.appSection {
+  margin-left: 280px;
+}
+
+.sidebaricon {
+  font-size: 30px;
+}
+
+.sidebarmenu p {
+  font-size: 18px;
+}
+
+.accordion-body ul li a,
+.submenu-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 20px 12px 35px;
+  position: relative;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-body ul li a:hover,
+.submenu-link:hover {
+  background-color: rgba(70, 84, 100, 0.95);
+}
+
+.submenu-link::before {
+  content: "•";
+  position: absolute;
+  left: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 12px 16px;
+}
+
+.accordion-button:hover,
+.accordion-button:focus,
+.accordion-button:active {
+  color: #fff;
+  background-color: rgba(70, 84, 100, 0.95) !important;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.accordion-body ul {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.accordion-body ul li {
+  margin-top: 5px;
+}
+
+.breadcrumb-item a {
+  color: #0b7bde;
+}
+.breadcrumb-item a:hover {
+  color: #0b7bde;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: " / ";
+  color: white;
+}
+
+.custom-input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.stat-card {
+  animation: fadeIn 0.8s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 485px) and (max-width: 700px) {
+  .sidebarmenu {
+    width: 200px;
+    height: 100vh;
+  }
+
+  .appSection {
+    margin-left: 200px;
+  }
+
+  .dashview{
+    overflow: scroll;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 485px) {
+  .sidebarmenu {
+    width: 140px;
+    height: 100vh;
+  }
+
+  .sidebartitle {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .sidebaricon {
+    font-size: 20px;
+  }
+
+  .appSection {
+    margin-left: 140px;
+  }
+
+  .sidebarmenu p {
+    font-size: 14px;
+  }
+
+  .dashhome {
+    font-size: 20px;
+  }
+  .accordion span {
+    font-size: 13px;
+  }
+    .dashview{
+    overflow: scroll;
+  }
+}
+
+/* ---------- Auth (Login / Register) UI ---------- */
+
+.auth-page {
+  background: radial-gradient(circle at top left, var(--fabrixa-green), #0f172a);
+}
+
+.auth-card {
+  background-color: rgba(15, 23, 42, 0.03);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+}
+
+.auth-card-left {
+  background: linear-gradient(135deg, var(--fabrixa-green), #0f172a);
+}
+
+.auth-input {
+  border-radius: 999px;
+  border-color: #e5e7eb;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.auth-input:focus {
+  border-color: var(--fabrixa-green);
+  box-shadow: 0 0 0 0.15rem rgba(118, 180, 63, 0.3);
+}
+
+.auth-link {
+  color: var(--fabrixa-green);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link:hover {
+  color: #5d9232;
+  text-decoration: underline;
+}
+
+/* ---------- Admin Panel Layout ---------- */
+
+.admin-header {
+  background: linear-gradient(to right, #020617, #0f172a);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.admin-header-top {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.admin-breadcrumb {
+  background-color: rgba(15, 23, 42, 0.98);
+  border-top: 1px solid rgba(15, 23, 42, 1);
+  border-bottom: 1px solid rgba(51, 65, 85, 0.7);
+}
+
+.text-muted-50 {
+  color: rgba(148, 163, 184, 0.8) !important;
+}
+
+.sidebarmenu {
+  background: radial-gradient(circle at top, #020617, #020617 40%, #020617);
+}
+
+.sidebar-brand {
+  border-bottom: 1px solid rgba(51, 65, 85, 0.8);
+}
+
+.sidebar-logo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.sidebar-link {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 0.55rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: rgba(118, 180, 63, 0.18);
+  color: #ffffff;
+  transform: translateX(2px);
+}
+
+.admin-main {
+  min-height: calc(100vh - 120px);
+  background: radial-gradient(circle at top left, #020617, #020617);
+}
+
+.admin-stat-card {
+  border-radius: 16px;
+  background: radial-gradient(
+    circle at top left,
+    var(--fabrixa-green) 0,
+    #0f172a 45%,
+    #020617 100%
+  );
+  color: #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin-stat-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 0 0, rgba(59, 130, 246, 0.25), transparent 55%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.admin-stat-card .card-body {
+  position: relative;
+  z-index: 1;
+}
+
+.admin-stat-icon {
+  width: 42px;
+  height: 42px;
+  background: rgba(15, 23, 42, 0.85);
+  color: var(--fabrixa-green);
+}
+
+.admin-table-wrapper {
+  background-color: rgba(15, 23, 42, 0.98);
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+.admin-table thead tr {
+  background-color: rgba(15, 23, 42, 1);
+}
+
+.admin-table tbody tr:hover {
+  background-color: rgba(30, 64, 175, 0.45) !important;
+}
+
+.admin-form-card {
+  background-color: rgba(15, 23, 42, 0.98);
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+.admin-form-header {
+  border-bottom: 1px solid rgba(51, 65, 85, 0.8);
+  padding: 0.7rem 0.9rem;
+}
+
+.admin-input {
+  background-color: rgba(15, 23, 42, 1);
+  color: #e5e7eb;
+  border-color: rgba(51, 65, 85, 0.9);
+}
+
+.admin-input::placeholder {
+  color: rgba(148, 163, 184, 0.7);
+}
+
+.admin-input:focus {
+  border-color: var(--fabrixa-green);
+  box-shadow: 0 0 0 0.1rem rgba(118, 180, 63, 0.35);
+}
+
+/* ---------- Buttons (theme) ---------- */
+.btn-primary {
+  background: linear-gradient(135deg, var(--fabrixa-green), #5d9232);
+  border: none;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5d9232, var(--fabrixa-green));
+}
+.btn-warning {
+  background: linear-gradient(135deg, #f8c146, #d99a00);
+  border: none;
+  color: #1f2937;
+}
+.btn-warning:hover {
+  background: linear-gradient(135deg, #d99a00, #f8c146);
+  color: #111827;
+}
+.btn-outline-warning {
+  border-color: #f8c146;
+  color: #f8c146;
+}
+.btn-outline-warning:hover {
+  background: linear-gradient(135deg, #f8c146, #d99a00);
+  color: #1f2937;
+}
+.btn-outline-danger {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+.btn-outline-danger:hover {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+}
+.btn-outline-light {
+  border-color: #e5e7eb;
+  color: #e5e7eb;
+}
+.btn-outline-light:hover {
+  background: linear-gradient(135deg, #ffffff, #e5e7eb);
+  color: #111827;
+}
+
+/* Action buttons for tables */
+.btn-update {
+  background: linear-gradient(135deg, var(--fabrixa-green), #5d9232);
+  color: #0b1407;
+  border: none;
+}
+.btn-update:hover {
+  background: linear-gradient(135deg, #5d9232, var(--fabrixa-green));
+  color: #0b1407;
+}
+.btn-delete {
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  background: transparent;
+}
+.btn-delete:hover {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+}
+
+/* Themed utility buttons */
+.btn-update {
+  background: linear-gradient(135deg, var(--fabrixa-green), #5d9232);
+  border: none;
+  color: #fff;
+}
+.btn-update:hover {
+  background: linear-gradient(135deg, #5d9232, var(--fabrixa-green));
+  color: #fff;
+}
+.btn-delete {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  color: #fff;
+}
+.btn-delete:hover {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  color: #fff;
+}
